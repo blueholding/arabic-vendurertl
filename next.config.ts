@@ -6,18 +6,28 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 const nextConfig: NextConfig = {
     cacheComponents: true,
     images: {
-        // This is necessary to display images from your local Vendure instance
         dangerouslyAllowLocalIP: true,
         remotePatterns: [
             {
+                protocol: 'https',
+                hostname: 'bramjlive.com',
+            },
+            {
+                protocol: 'https',
+                hostname: 'panda.bramjlive.com',
+            },
+            {
+                protocol: 'https',
                 hostname: 'readonlydemo.vendure.io',
             },
             {
-                hostname: 'demo.vendure.io'
+                protocol: 'https',
+                hostname: 'demo.vendure.io',
             },
             {
-                hostname: 'localhost'
-            }
+                protocol: 'http',
+                hostname: 'localhost',
+            },
         ],
     },
     experimental: {
