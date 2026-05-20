@@ -10,11 +10,11 @@ const nextConfig: NextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'bramjlive.com',
+                hostname: 'dash.souqedku.com',
             },
             {
                 protocol: 'https',
-                hostname: 'panda.bramjlive.com',
+                hostname: 'souqedku.com',
             },
             {
                 protocol: 'https',
